@@ -84,13 +84,13 @@ Detection and Classification of forest ranger and poacher using Daytime CNN mode
 
 Detection and Classification of Elephants using Daytime CNN model.
 
-![Picture3](Picture3.png)
+![Picture5](Picture5.png)
 
 Detection and Classification of forest rangers and poachers using Night-time CNN model
 
 ![Picture4](Picture4.png)
 
-![Picture5](Picture5.png)
+![Picture3](Picture3.png)
 
 Detection and Classification of Elephants using Night-time CNN model
 
