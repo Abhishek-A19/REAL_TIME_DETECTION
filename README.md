@@ -34,6 +34,7 @@ The collection of thermal or normal video feed of the wildlife reserve in real-t
 A light intensity sensor (LM393) is used to detect the intensity of light throughout the day and adjust the camera vision. If the light intensity is low, the thermal imaging vision is activated and when the light intensity is high, the normal imaging vision is activated.
 
 Block diagram of Autonomous GPS Drone system.
+
 ![Drone](Drone.png)
 
 # 2) WORKING:
@@ -45,9 +46,11 @@ Forest rangers will be provided with specially crafted IR reflective jackets whi
 If any abnormalities are detected during these analyses, the chief forest rangers are alerted regarding it along with geographic coordinates of the location via security alarms or message-based systems like SMS.
 
 Working of the CNN models
+
 ![CNN](CNN.png)
 
 Working of the ANN models.
+
 ![ANN](ANN.png)
 
 # MODULES IDENTIFIED
@@ -59,9 +62,11 @@ The CNN model is trained using python scripts and TensorFlow object detection li
 The Preconfigured SSD mobile net v2 model is then trained with the training dataset using TensorFlow and python codes and the accuracy is adjusted by observing the loss rate with respect to epochs.
 
 Detection of Gunshots from recorded live audio feed
+
 ![Picture7](Picture7.png)
 
 Labelling of dataset images using LabelImg tool
+
 ![Picture8](Picture8.png)
 
 # CONCLUSION
@@ -72,15 +77,21 @@ Real-time video streams from the drone system are evaluated and classified using
 # OUTPUTS
 
 Detection and Classification of forest ranger and poacher using Daytime CNN model.
+
 ![Picture1](Picture1.png)
+
 ![Picture2](Picture2.png)
 
 Detection and Classification of Elephants using Daytime CNN model.
+
 ![Picture3](Picture3.png)
 
 Detection and Classification of forest rangers and poachers using Night-time CNN model
+
 ![Picture4](Picture4.png)
+
 ![Picture5](Picture5.png)
 
 Detection and Classification of Elephants using Night-time CNN model
+
 ![Picture6](Picture6.png)
