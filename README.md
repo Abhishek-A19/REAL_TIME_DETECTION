@@ -58,6 +58,12 @@ A convolutional neural network model is used to evaluate and classify real-time 
 The CNN model is trained using python scripts and TensorFlow object detection libraries.
 The Preconfigured SSD mobile net v2 model is then trained with the training dataset using TensorFlow and python codes and the accuracy is adjusted by observing the loss rate with respect to epochs.
 
+Detection of Gunshots from recorded live audio feed
+![Picture7](Picture7.png)
+
+Labelling of dataset images using LabelImg tool
+![Picture8](Picture8.png)
+
 # CONCLUSION
 The system that combines two disciplines of computing: the Internet of Things and Machine Learning's Convolutional Neural Networks.
 Thermal imaging has emerged as a novel technology capable of resolving a wide range of issues. Poaching is one such issue that affects the biodiversity and ecosystem of our planet.
@@ -78,9 +84,3 @@ Detection and Classification of forest rangers and poachers using Night-time CNN
 
 Detection and Classification of Elephants using Night-time CNN model
 ![Picture6](Picture6.png)
-
-Detection of Gunshots from recorded live audio feed
-![Picture7](Picture7.png)
-
-Labelling of dataset images using LabelImg tool
-![Picture8](Picture8.png)
