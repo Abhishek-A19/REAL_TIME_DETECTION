@@ -33,6 +33,9 @@ A magnetometer (HMC588L) will help the drone to adjust and identify its current 
 The collection of thermal or normal video feed of the wildlife reserve in real-time is performed using an Infrared camera unit (OV5647 5 MP IR-cut camera) attached to the drone. The camera activates thermal vision during the night and normal vision during the day. 
 A light intensity sensor (LM393) is used to detect the intensity of light throughout the day and adjust the camera vision. If the light intensity is low, the thermal imaging vision is activated and when the light intensity is high, the normal imaging vision is activated.
 
+Block diagram of Autonomous GPS Drone system.
+![Drone](Drone.png)
+
 # 2) WORKING:
 The real-time video feed is analyzed and classified using a convolutional neural network model. This model is pre-trained on a large dataset containing images of humans and animals in thermal vision and normal vision.
 The preconfigured SSD mobile net v2 CNN model is trained using python scripts and TensorFlow object detection libraries. The collected image dataset is first labelled using LabelImg tool in order to create a supervised learning environment.
@@ -40,6 +43,12 @@ The drone’s collected data is transmitted via the Wi-Fi network connection est
 Once the data is obtained on the central computer, a CNN model will be run on the real-time live feed to classify the objects seen on video. If the model classifies an object as a human, it further classifies the object as a poacher or a forest ranger based on the image details. 
 Forest rangers will be provided with specially crafted IR reflective jackets which reflect a unique pattern on camera. The model will also count the number of humans and vehicles present in the reserve, to analyze whether there is an extra number of vehicles or individuals.
 If any abnormalities are detected during these analyses, the chief forest rangers are alerted regarding it along with geographic coordinates of the location via security alarms or message-based systems like SMS.
+
+Working of the CNN models
+![CNN](CNN.png)
+
+Working of the ANN models.
+![ANN](ANN.png)
 
 # MODULES IDENTIFIED
 The drone will be fueled by a Li-On battery that can be manually charged or charged using solar panels and charging modules.
@@ -56,11 +65,22 @@ Real-time video streams from the drone system are evaluated and classified using
 
 # OUTPUTS
 
+Detection and Classification of forest ranger and poacher using Daytime CNN model.
 ![Picture1](Picture1.png)
 ![Picture2](Picture2.png)
+
+Detection and Classification of Elephants using Daytime CNN model.
 ![Picture3](Picture3.png)
+
+Detection and Classification of forest rangers and poachers using Night-time CNN model
 ![Picture4](Picture4.png)
 ![Picture5](Picture5.png)
+
+Detection and Classification of Elephants using Night-time CNN model
 ![Picture6](Picture6.png)
+
+Detection of Gunshots from recorded live audio feed
 ![Picture7](Picture7.png)
+
+Labelling of dataset images using LabelImg tool
 ![Picture8](Picture8.png)
